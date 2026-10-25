@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex items-center">
         <Logoo
           name="Tsita Mogau Setshaba Phias"
-          description="Software Developer | Data Analyst"
+          description="Computer Science Graduate"
         />
       </div>
       <div>
@@ -50,7 +50,7 @@ const Navbar = () => {
               <div>
                 <Logoo
                   name="Tsita Mogau Setshaba Phias"
-                  description="Software Developer | Data Analyst"
+                  description="Computer Science Graduate"
                   />
                
                 <p className="text-sm text-gray-400 mt-2">

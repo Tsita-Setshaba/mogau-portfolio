@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Title from '../layouts/Title';
 import ProjectsCard from './ProjectsCard';
+import { cvProjects, mergeByTitle } from '../../data/cvData';
 import { getDatabase, ref, push, remove, onValue, update } from 'firebase/database';
 
 const Projects = () => {
@@ -105,12 +106,14 @@ const Projects = () => {
         <Title des="My Projects" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
-        {projects.map((project) => (
+        {mergeByTitle(projects, cvProjects).map((project) => (
           <div key={project.id}>
             <ProjectsCard
               title={project.title}
               des={project.des}
               src={project.src}
+              icon={project.icon}
+              date={project.date}
             />
             {/* <div className="flex justify-between mt-2">
               <button

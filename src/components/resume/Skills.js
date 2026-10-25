@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { cvSkillGroups } from '../../data/cvData';
 import { getDatabase, ref, push, remove, onValue, update } from '../firebaseConfig';
 
 const Skills = () => {
@@ -107,8 +108,9 @@ const Skills = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
+      className="w-full flex flex-col gap-10"
     >
+      <div className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20">
       {/* Skills Display */}
       <div className="w-full lgl:w-1/2">
         <div className="py-12 font-titleFont flex flex-col gap-4">
@@ -175,6 +177,30 @@ const Skills = () => {
                   Delete
                 </button>
               </div> */}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      </div>
+
+      {/* Technical skills from the CV */}
+      <div className="w-full">
+        <div className="py-6 font-titleFont flex flex-col gap-4">
+          <p className="text-sm text-designColor tracking-[4px] uppercase">Technical</p>
+          <h2 className="text-3xl md:text-4xl font-bold">Skills & Tools</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {cvSkillGroups.map((group) => (
+            <div key={group.name} className="rounded-lg bg-black bg-opacity-20 p-6 shadow-shadowOne">
+              <h3 className="text-lg font-semibold mb-4">{group.name}</h3>
+              <div className="flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <span key={item} className="px-3 py-1 text-sm text-gray-300 bg-black bg-opacity-30 rounded-full border border-designColor/30">
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>

@@ -61,16 +61,14 @@ const LeftBanner = () => {
                     <span className="animate-pulse">|</span>
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base font-bodyFont leading-6 tracking-wide">
-                    A BSc (Computer Science & Statistics) graduate who builds
-                    reliable software systems and applies data analysis and
-                    statistical modeling to transform raw data into actionable insights.
-                    Experienced in developing data-driven applications,
-                    ensuring data integrity, and applying techniques such as regression,
-                    time series analysis, sampling theory, and experimental design to support evidence-based
-                    decision-making and operational efficiency, particularly in public-impact environments. 
-                    I am committed to creating user-friendly solutions and passionate about 
-                    contributing to impactful tech projects. My goal is to support digital literacy initiatives, 
-                    especially in underprivileged communities, while continuing to grow as a software engineer.
+                    Computer Science and Statistics graduate currently completing an Honours degree in
+                    Computer Science at the University of Limpopo. Skilled in software development,
+                    computer networking, cybersecurity, database management, data analytics, and artificial
+                    intelligence. Experienced in Python, Java, JavaScript, SQL, Ubuntu Linux, and machine
+                    learning through academic and research projects, including Linux router configuration,
+                    database systems, DDoS attack detection, and predictive modelling. Strong analytical,
+                    problem-solving, and technical troubleshooting skills, with a passion for developing
+                    reliable technology solutions and continuously learning new technologies.
                 </p>
 
                 <button

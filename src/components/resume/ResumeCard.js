@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const ResumeCard = ({ title, result, des, handleDelete, handleEdit }) => {
+const ResumeCard = ({ title, subTitle, result, des, handleDelete, handleEdit }) => {
   return (
     <div className="w-full h-1/3 group flex">
       <div className="w-10 h-[6px] bgOpacity mt-16 relative">
@@ -15,9 +15,11 @@ const ResumeCard = ({ title, result, des, handleDelete, handleEdit }) => {
             <h3 className="text-xl md:text-2xl font-semibold group-hover:text-white duration-300">
               {title}
             </h3>
-            <p className="text-sm mt-2 text-gray-400 group-hover:text-white duration-300">
-              {des}
-            </p>
+            {subTitle && (
+              <p className="text-sm mt-2 text-gray-400 group-hover:text-white duration-300">
+                {subTitle}
+              </p>
+            )}
           </div>
           <div>
             <p className="px-4 py-2 text-designColor bg-black bg-opacity-25 rounded-lg flex justify-center items-center shadow-shadowOne text-sm font-medium">

@@ -6,6 +6,7 @@ import { SiProgress, SiAntdesign } from "react-icons/si";
 import { FaChartBar } from "react-icons/fa";
 import { SiTableau } from "react-icons/si";
 import { SiTensorflow } from "react-icons/si";
+import { FaNetworkWired, FaShieldAlt, FaDatabase } from "react-icons/fa";
 // Features Data
 export const featuresData = [
   {
@@ -61,6 +62,24 @@ export const featuresData = [
   icon: <SiTensorflow />,
   title: "Machine Learning",
   des: "Designing, training, and evaluating predictive models using supervised and unsupervised learning techniques to extract actionable insights from data.",
+},
+{
+  id: 10,
+  icon: <FaNetworkWired />,
+  title: "Computer Networking",
+  des: "Configuring and troubleshooting networks, including Ubuntu Linux routers with NAT, DHCP and firewall rules, plus TCP/IP, DNS, subnetting and routing.",
+},
+{
+  id: 11,
+  icon: <FaShieldAlt />,
+  title: "Cybersecurity",
+  des: "Detecting and analysing network attacks, such as DDoS detection with Random Forest models, and understanding how to defend systems against them.",
+},
+{
+  id: 12,
+  icon: <FaDatabase />,
+  title: "Database Management",
+  des: "Designing normalised schemas and ER diagrams, and writing SQL for reporting in PostgreSQL, Oracle SQL, MongoDB and Firebase.",
 }
 
   

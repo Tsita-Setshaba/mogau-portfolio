@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ResumeCard from "./ResumeCard";
+import { cvAchievements, mergeByTitle } from "../../data/cvData";
 import { getDatabase, ref, push, remove, update, onValue } from '../firebaseConfig';
 
 const Achievement = () => {
@@ -97,11 +98,11 @@ const Achievement = () => {
     >
       <div className="w-full md:w-1/2">
         <div className="py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2024 - 2025</p>
+          <p className="text-sm text-designColor tracking-[4px]">2024 - 2026</p>
           <h2 className="text-4xl font-bold">Awards & Achievements</h2>
         </div>
         <div className="mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          {achievements.map((achievement) => (
+          {mergeByTitle(achievements, cvAchievements).map((achievement) => (
             <ResumeCard
               key={achievement.id}
               title={achievement.title}
